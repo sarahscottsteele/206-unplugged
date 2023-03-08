@@ -129,6 +129,14 @@ textarea {
       line-height: 1.285;
    }
 
+   img {
+    width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
    address {
       font-style: normal;
    }
@@ -137,6 +145,7 @@ textarea {
     width: 90%;
     margin: 50px 0;
   }
+
 
    /*--------------------- Header /  Footer Styles ----------------*/
 
@@ -149,18 +158,25 @@ textarea {
     flex-flow: row wrap;
   }
 
-  /* Header Styles */
 
   header {
     padding: 15px 0;
   }
 
   header .content-wrapper {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0;
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .header-divider {
@@ -182,9 +198,9 @@ textarea {
   }
 
   header nav ul {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    width: 100%;
   }
 
   header nav ul li {
@@ -229,6 +245,10 @@ textarea {
   /*--------------------- Mobile Styles Homepage ----------------*/
 
   .hero-area {
+    background: url(../img/unplugged-retreat.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -241,14 +261,16 @@ textarea {
     line-height: 1.2; 
   }
 
+
+
   /* Aside */
 
   aside {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: #527158;
   }
 
   aside .form {
@@ -281,6 +303,9 @@ textarea {
   /* Features */
 
   .features {
+    background: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -310,10 +335,10 @@ textarea {
   /* Reviews */
 
   .reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: #2a423a;
   }
 
   .reviews h2 {
@@ -329,19 +354,19 @@ textarea {
   /*--------------------------About Page -----------------------------------------*/
 
   .mission {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: #527158;
   }
 
   .contact-section {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: #2a423a;
   }
 
   .contact-content p {
@@ -351,11 +376,11 @@ textarea {
   /* --------------------------------FAQ Page --------------------------------*/
 
   .faq {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: #527158;
   }
 
   .faq .content-wrapper {
@@ -378,9 +403,6 @@ textarea {
   .faq-content h4 {
     line-height: 1.333;
   }
-
-
-
 
 
 
@@ -474,10 +496,22 @@ textarea {
 
 @media only screen and (min-width: 768px) {
     /*Tablet Styles here*/
-    .content-wrapper {
-      max-width: 640px;
-      margin: 100px 0;
-    }
+
+    /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+      
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
 
     /*Header*/
 
@@ -489,6 +523,10 @@ textarea {
     header .content-wrapper {
       width: 100%;
       justify-content: space-between;
+    }
+
+    header figure {
+      width: 30%;
     }
 
     header nav {
@@ -504,6 +542,16 @@ textarea {
     }
 
     /*Hero Area*/
+
+    .hero-area {
+      min-height: 600px;
+    }
+  
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+  }
 
     /*Aside*/
 
@@ -522,6 +570,10 @@ textarea {
 
     /*Features*/
 
+    .features h2 {
+      margin-bottom: 20px;
+    }
+
     .features article {
       display: flex;
       justify-content: center;
@@ -531,7 +583,7 @@ textarea {
     }
 
     .featuers .features-item-description {
-      width: 50%;
+      width: 62%;
     }
 
     /*Reviews*/
@@ -541,8 +593,18 @@ textarea {
       justify-content: space-between;
     }
 
+    .reviews h2 {
+      width: 85%;
+    }
+
+    .reviews article figure,
     .reviews article div {
       width: 49%;
+    }
+
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
 
     /*Footer*/
@@ -552,14 +614,24 @@ textarea {
       margin: 100px 0;
     }
 
-    .footer-content {
+    footer .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
     }
 
     footer .contact {
       margin-bottom: 0;
+    }
+
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+  
+    footer p {
+        line-height: 1.285;
     }
 
     footer .copyright {
@@ -589,6 +661,10 @@ textarea {
       align-items: flex-start;
     }
 
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
+
     /*----------------------------------FAQ Page---------------------------------------*/
 
     .faq .content-wrapper {
@@ -602,19 +678,44 @@ textarea {
     .faq h2 {
       width: 100%;
     }
+
+    .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
 
+    header {
+      padding: 15px 0;
+    }
+
     .content-wrapper {
       max-width: 960px;
+    }
+
+    h2 {
+      font-size: 2.25em;
+    }
+  
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+  
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
     }
 
     /*Hero*/
 
     .hero-area h1 {
-      width: 60%;
+      font-size: 3.75em;
+      width: 80%;
     }
 
     /*Aside*/
@@ -627,6 +728,11 @@ textarea {
     aside .content-wrapper .form {
       width: 30%;
     }
+
+    .form-description p {
+      font-size: 1.125em;
+    }
+  
 
     /*Features*/
 
@@ -644,18 +750,38 @@ textarea {
       width: 42%;
     }
 
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
+  
+    footer h4 {
+      font-size: 1.875em;
+    }
+
     /*---------------------------------------About Page----------------------------------------*/
 
     .mission h2,
     .contact-section .content-wrapper h2 {
       width: 95%;
+      font-size: 3em;
+    }
+
+    .contact-content h4 {
+      font-size: 1.875em;
     }
 
     /*-------------------------------------FAQ Page-----------------------------------------*/
 
     .faq h2 {
       width: 100%;
+      font-size: 3em;
     }
+
+    .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
 }
 
 /* ==========================================================================
