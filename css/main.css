@@ -103,6 +103,8 @@ textarea {
    ul,
    ol {
       list-style-type: none;
+      margin: 0;
+      padding: 0;
    }
 
    a {
@@ -114,6 +116,7 @@ textarea {
       font-family: 'Poppins', sans-serif;
       font-size: 1.875em;
       font-weight: 500;
+      margin: 0;
    }
 
    h3,
@@ -615,6 +618,10 @@ textarea {
       width: 62%;
     }
 
+    .features i {
+      margin-bottom: 30px;
+    }
+
     /*Reviews*/
 
     .reviews article {
@@ -661,6 +668,11 @@ textarea {
   
     footer p {
         line-height: 1.285;
+    }
+
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
     }
 
     footer .copyright {
@@ -713,7 +725,7 @@ textarea {
     }
 
     .faq h4,
-  .faq p {
+    .faq p {
       font-size: .875em;
       line-height: 1.125;
   }
@@ -815,7 +827,7 @@ textarea {
     }
 
     .faq h4,
-  .faq p {
+    .faq p {
       font-size: 1.125em;
       line-height: 1;
   }
