@@ -221,7 +221,7 @@ textarea {
 
   footer .content-wrapper {
     width: 55%;
-    margin: 50px o;
+    margin: 50px 0;
   }
 
 
@@ -791,12 +791,12 @@ textarea {
 
     /*Reviews*/
 
-    .reviews article div {
-      width: 42%;
+    .reviews h2 {
+      padding-bottom: 50px; 
     }
 
-    .reviews h2 {
-      padding-bottom: 50px;
+    .reviews article div {
+      width: 42%;
     }
   
     footer h4 {
